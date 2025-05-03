@@ -1,0 +1,14 @@
+.labelsInput{
+    color: white;
+}
+.botoesCalculadora{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   margin-top: 35px;
+   gap: 10px;
+}
+.Inputs{
+    padding: 15px;
+    border: none;
+}

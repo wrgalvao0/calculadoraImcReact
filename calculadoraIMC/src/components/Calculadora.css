@@ -1,0 +1,17 @@
+#titulo{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+#container-calculadora{
+    background-color: #1e1e32;
+    padding: 25px;
+    border-radius: 10px;
+}
+#formulario-calculadora{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
