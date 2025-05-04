@@ -11,6 +11,21 @@ h1,h2,h3{
     color: white;
     margin-bottom: 5px;
 }
+#Magresa{
+    color: yellow;
+}
+#Normal{
+    color: green;
+}
+#Sobrepeso{
+    color: yellow;
+}
+#Obesidade{
+    color: red;
+}
+#ObesidaeGrave{
+    color: purple;
+}
 table{
     margin-top: 10px;
 }

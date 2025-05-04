@@ -1,13 +1,12 @@
-import React from 'react'
 import './TabelaResultado.css'
 import Button from './Button'
 
 const TabelaResultado = ({imc, situacao, voltar}) => {
   return (
     <div id='container-resultado'>
-        <h1>Seu IMC: {imc} </h1>
-        <h2>Situação atual: {situacao}</h2>
-        <h3>Confira as classificações</h3>
+        <h1>Seu IMC: <span id={situacao === 'Obesidade grave' ? 'Obesidade' : situacao}>{imc}</span></h1>
+        <h2>Situação atual: <span id={situacao === 'Obesidade grave' ? 'Obesidade' : situacao}>{situacao}</span></h2>
+        <h3>Confira as classificações:</h3>
         <table>
             <thead>
                 <tr>

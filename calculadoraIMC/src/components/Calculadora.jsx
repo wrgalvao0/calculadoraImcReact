@@ -30,14 +30,15 @@ const Calculadora = ({calcula}) => {
     }
     calcula(imc, situacao)
   }
+
   return (
     <div id='container-calculadora'>
         <h1 id='titulo'>CALCULADORA DE IMC</h1>
         <form action="" id='formulario-calculadora'>
-            <label className={styles.labelsInput} htmlFor="input-altura">Altura</label>
-            <input value={altura} onChange={(e) => {setAltura(e.target.value)}} className={styles.Inputs} type="number" step={0.01} id='input-altura' placeholder='Digite a sua altura' />
-            <label className={styles.labelsInput} htmlFor="input-peso">Peso</label>
-            <input value={peso} onChange={(e) => {setPeso(e.target.value)}} className={styles.Inputs} type="number" step={0.01} id='input-peso' placeholder='Digite o seu peso' />
+            <label className={styles.labelsInput} htmlFor="input-altura">Altura:</label>
+            <input value={altura} onChange={(e) => {setAltura(e.target.value)}} className={styles.Inputs} type="number" step={0.01} id='input-altura' placeholder='Digite a sua altura em Metros EX: 1,70' />
+            <label className={styles.labelsInput} htmlFor="input-peso">Peso:</label>
+            <input value={peso} onChange={(e) => {setPeso(e.target.value)}} className={styles.Inputs} type="number" step={0.01} id='input-peso' placeholder='Digite o seu peso em KG EX: 62,5' />
         </form>
         <div className={styles.botoesCalculadora}>
             <Button id={'botaoCalcular'} text={'Calcular'} acao={Calcular}/>
